@@ -1,0 +1,24 @@
+# https://www.runoob.com/python3/python3-data-type.html 菜鸟教程
+import warnings #warnings包是对所有程序的警告做处理,
+warnings.filterwarnings('ignore') #filter是对错误做过滤器,对很多错误做ignore
+import numpy as np
+'''
+NumPy(numercal python)是python语言的一个扩展程序库,支持大量的维度数组与矩阵运算,此外也针对
+数组提供大量的数学函数库.
+数组计算,包含:一个强大的N维数组对象ndarray
+广播函数功能
+整合C/C++/Fortran代码的工具
+线性代数.傅里叶变换.随机数生成等功能
+NumPy通常与SciPy(scientific Python)和Matplotlib(绘图库)一起使用
+'''
+import pandas as pd #数据处理,数据分析.从excel或者csv文件里读取表格数据的窗.
+import math # 数学包
+from scipy import stats  # 数学包里的stats统计包
+from scipy.stats import norm #正态分布包
+import seaborn # 是matplotlib包的升级,很好的方法把图画漂亮.
+import matplotlib.pyplot as plt #数学绘图库
+from matplotlib.font_manager import FontProperties #字体做设置
+'''
+程序运行中在行间显示,因为python. exe无法直接显示.
+'''
+%matplotlib inline 
