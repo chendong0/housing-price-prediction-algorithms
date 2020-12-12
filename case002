@@ -21,4 +21,17 @@ from matplotlib.font_manager import FontProperties #字体做设置
 '''
 程序运行中在行间显示,因为python. exe无法直接显示.
 '''
-%matplotlib inline 
+%matplotlib inline  #网页无法弹出窗口，所用用inline在行里显示出来。
+
+#002
+df_train = pd.read_csv('./data/data_train.csv',encoding='gbk')
+'''
+方法的命名则遵循函数 命名规则，都是小写，并用下划线分隔。
+用read读取文件路径
+encoding'gbk'编码方式为中文
+'''
+df_train #显示数据集(应该是省略了print()前缀)
+
+#003
+print(df_train.columns) #打印出列索引,打印出所有属性,'房价'是标签,不是属性
+
